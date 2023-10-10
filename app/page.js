@@ -2,6 +2,7 @@ import React from 'react'
 import SideBar from './(components)/sidebar/sideBar'
 import NavBar from './(components)/navbar/navBar'
 import Stats from './(components)/stats/stats'
+import EnrolledStudentsList from './(components)/enrolledstudentslist/enrolledStudentsList'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <div className="page-content px-8 md:px-12 lg:px-14 py-14 w-full">
           <NavBar />
           <Stats />
-          stats graph
+          <EnrolledStudentsList/>
         </div>
       </div>
 
