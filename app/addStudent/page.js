@@ -12,8 +12,10 @@ export default function AddStudent() {
                     <NavBar />
                     <div className="stu-form py-14">
                         <h1 className="text-lg md:text-xl lg:text-2xl font-semibold text-center">Student enrollment form.</h1>
-                        <p className="text-slate-400 text-xs md:text-sm lg:text-lg font-light py-4 text-center max-w-3xl mx-auto">Familiarize yourself with the form and understand the information it requires. This will help you provide accurate and complete responses.</p>
-                        <StudentForm/>
+                        <p className="text-slate-400 text-xs md:text-sm lg:text-lg font-light py-4 text-center max-w-3xl mx-auto">
+                            Familiarize yourself with the form and understand the information it requires. This will help you provide accurate and complete responses.
+                        </p>
+                        <StudentForm />
                     </div>
                 </div>
             </div>

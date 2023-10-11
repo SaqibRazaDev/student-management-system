@@ -67,7 +67,7 @@ export default function StudentForm() {
                     onChange={(e) => setStudentName(e.target.value)}
                     value={studentName}
                     type="text"
-                    placeholder="Enter student name..."
+                    placeholder="John Doe"
                     className="h-8 md:mx-4  px-2 border border-1 rounded-md w-full md:w-1/4"
                 />
                 <br />
@@ -78,7 +78,7 @@ export default function StudentForm() {
                     onChange={(e) => setStudentId(e.target.value)}
                     value={studentId}
                     type="text"
-                    placeholder="Enter student ID..."
+                    placeholder="Student ID"
                     className="h-8 md:mx-4  px-2 border border-1 rounded-md w-full md:w-1/4"
                 />
                 <br />
@@ -89,7 +89,7 @@ export default function StudentForm() {
                     onChange={(e) => setCourseName(e.target.value)}
                     value={courseName}
                     type="text"
-                    placeholder="Enter student course name..."
+                    placeholder="Course name"
                     className="h-8 md:mx-4  px-2 border border-1 rounded-md w-full md:w-1/4"
                 />
                 <br />
@@ -100,7 +100,7 @@ export default function StudentForm() {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     type="text"
-                    placeholder="Enter student email..."
+                    placeholder="example@xyz.com"
                     className="h-8 md:mx-4  px-2 border border-1 rounded-md w-full md:w-1/4"
                 />
                 <br />
@@ -111,24 +111,23 @@ export default function StudentForm() {
                     onChange={(e) => setContact(e.target.value)}
                     value={contact}
                     type="text"
-                    placeholder="Enter student contact..."
+                    placeholder="03xxxxxxxxx"
                     className="h-8 md:mx-4  px-2 border border-1 rounded-md w-full md:w-1/4"
                 />
                 <br />
                 <br />
 
                 {/* Other input fields go here */}
-                <br />
-                <br />
-                <button
+                <Link
+                    href={""}
                     onClick={onSubmitHandler}
-                    className="bg-white hover:bg-gray-100 text-gray-800 md:font-semibold py-2 px-2 mx-auto border border-gray-400 rounded shadow flex"
+                    className="bg-white hover:bg-gray-100 text-gray-800 md:font-semibold py-2 px-2 mx-auto border border-gray-400 max-w-xs rounded shadow flex justify-center"
                 >
                     <BsPersonFillAdd size={20} />{' '}
-                    <Link href="/addStudent">
-                        <span className="mx-2">Enroll Student </span>{' '}
-                    </Link>
-                </button>
+                    <span className="mx-2">Enroll Now</span>{' '}
+
+                </Link>
+
             </div>
 
             {showAlert && (
